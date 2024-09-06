@@ -30,7 +30,7 @@ PushNotification.configure({
 })
 
 
-export const showNotification = (title, message) => {
+export const showNotification = (title: string , message: string) => {
     PushNotification.localNotification({
         channelId: 'default-channel-1',
         userInfo : {name : 'mugheera' , age : 20},
@@ -40,7 +40,7 @@ export const showNotification = (title, message) => {
     })
 }
 
-export const scheduleShowNotification = (title, message, date) => {
+export const scheduleShowNotification = (title: string, message: string, date: Date) => {
     PushNotification.localNotificationSchedule({
         channelId: 'default-channel-1',
         userInfo : {name : 'mugheera' , age : 20},
